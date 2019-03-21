@@ -1,0 +1,7 @@
+package: github.com/vishal-biyani/kubernetes-days-india
+import:
+  - package: k8s.io/client-go
+    version: v4.0.0
+    subpackages:
+      - plugin/pkg/client/auth/gcp
+  - package: github.com/urfave/cli
