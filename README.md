@@ -2,7 +2,7 @@
 
 ## Using Kubernetes API effectively with Golang
 
-Slides can be found [at this link](https://docs.google.com/presentation/d/1QiU_yeVTw7H5sYollZD2FWXmNQZ0KO1t3Ca25lhwYyk/edit?usp=sharing)
+Slides can be found [at this link](https://docs.google.com/presentation/d/e/2PACX-1vSRLbz187ObLloLW_2-eqUY-IFGTwNwaA1VmEoMfgDK6MJTu7zBZODPLwCFN4TQsZ0wcODFlMuzBGmE/pub?start=false&loop=false&delayms=3000)
 
 To build:
 
