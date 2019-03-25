@@ -12,7 +12,7 @@ import (
 )
 
 func informer(c *cli.Context) {
-	fmt.Println("Running Example Three")
+	fmt.Println("Running Informer Example")
 	cs := getKubeHandle()
 	listWatch := cache.NewListWatchFromClient(cs.Core().RESTClient(), "pods", "", fields.Everything())
 

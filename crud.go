@@ -9,7 +9,7 @@ import (
 )
 
 func crudOperation(c *cli.Context) {
-	fmt.Println("Running Example One")
+	fmt.Println("Running CRUD Example")
 	cs := getKubeHandle()
 
 	pods, err := cs.CoreV1().Pods("").List(metav1.ListOptions{})

@@ -21,7 +21,7 @@ type Controller struct {
 }
 
 func workqueue_example(c *cli.Context) {
-	fmt.Println("Running Four")
+	fmt.Println("Running Workqueue example")
 	cs := getKubeHandle()
 
 	queue := workqueue.NewRateLimitingQueue(workqueue.DefaultControllerRateLimiter())
@@ -101,7 +101,7 @@ func (c *Controller) processBusinessLogic(key string) error {
 	} else {
 		// Note that you also have to check the uid if you have a local controlled resource, which
 		// is dependent on the actual instance, to detect that a Pod was recreated with the same name
-		fmt.Printf("Sync/Add/Update for Pod %s\n", obj.(*v1.Pod).GetName())
+		fmt.Printf("Add event for Pod %s\n", obj.(*v1.Pod).GetName())
 	}
 
 	return nil

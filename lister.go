@@ -12,7 +12,7 @@ import (
 )
 
 func lister(c *cli.Context) {
-	fmt.Println("Running Example Two")
+	fmt.Println("Running Lister Example")
 	cs := getKubeHandle()
 	listWatch := cache.NewListWatchFromClient(cs.Core().RESTClient(), "pods", "", fields.Everything())
 
